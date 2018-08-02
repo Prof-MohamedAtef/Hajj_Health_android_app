@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Hajj Health</string>
+    <string name="niceword">We Care of Hajj health</string>
+    <string name="urin">You are in : </string>
+    <string name="near_by">Your near by</string>
+    <string name="Request">Make Request</string>
+    <string name="pleasewait">Please wait ..</string>
+    <string name="location_services_message">Your Location Services looks disabled, Please enable it to Join our App!</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="location_services_message_warning">You Must enable gathering Location Services to Join our App!</string>
+    <string name="refuse">Refuse</string>
+    <string name="agree">Agree</string>
+    <string name="warning">Warning</string>
+    <string name="networkproblem">Connection Problem!</string>
+    <string name="ok">Ok</string>
+    <string name="opps">Opps</string>
+    <string name="penddingconnection">Location pending connection ...</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="user_name">User Name</string>
+    <string name="passportnum">Passport Num</string>
+    <string name="loading">Loading</string>
+    <string name="gender">Gender</string>
+    <string name="nationality">Nationality</string>
+    <string name="patient_status">Patient Status</string>
+    <string name="google_api">AIzaSyBuOtPKdkocUHvV_-6BdCvhAIc02WIQvVo</string>
+    <string name="diseases">Diseases</string>
+    <string name="diabets">Diabets</string>
+    <string name="blood">Blood</string>
+    <string name="heart">Heart</string>
+    <string name="length">Length</string>
+    <string name="exist">exist</string>
+    <string name="qr_descrip1">your data simply in QR code</string>
+    <string name="qr_descrip2">scan your data via QR Code scanner technique</string>
+    <string name="profiledescrip1">Browse patient medical reports</string>
+    <string name="profiledescrip2">enable doctors diagnose the patient status according to previous reports</string>
+    <string name="profile">Personal Profile</string>
+    <string name="ask_doc">Ask Doctor</string>
+
+    <string name="askdoc1">Request a Doctor</string>
+    <string name="askdoc2">request doctors to visit you in your place</string>
+    <string name="reachdoc1">Reach nearest Doctor</string>
+    <string name="reachdoc2">enable users to deal with the nearest doctor</string>
+    <string name="notify1">Notifications from Doctors</string>
+    <string name="notify2">receive notifications from doctors and brows details of places arrival</string>
+    <string name="weight">Weight</string>
+    <string name="DOB">Date of Birth</string>
+
+
+</resources>
+

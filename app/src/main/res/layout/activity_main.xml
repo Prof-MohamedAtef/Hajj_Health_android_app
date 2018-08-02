@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/icons"
+    tools:context="prof.mo.ed.hajj_health.Activities.MainActivity">
+
+
+    <LinearLayout
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_margin="25dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@color/icons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:background="@color/green"
+                android:gravity="center"
+                android:id="@+id/Linear_Profile_launcher"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/profile_picture"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_person"
+                    android:background="@color/green"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/icons"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/Linear_doc_request_launcher"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@color/green">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/request_doc"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/user_icon"
+                    android:background="@drawable/ic_doctor"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/icons"
+                    android:layout_marginTop="5dp"
+                    android:text="Request Doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:background="@color/green"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/user_icon"
+                    android:background="@drawable/ic_remoteconultancycon"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/icons"
+                    android:layout_marginTop="5dp"
+                    android:text="Request Doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/green"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/user_icon"
+                    android:background="@drawable/ic_emergency"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/icons"
+                    android:layout_marginTop="5dp"
+                    android:text="Request Doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
