@@ -42,29 +42,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void ChooseOption() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
-        builder.setMessage(getApplicationContext().getString(android.R.string.CallPermissionAlert))
+        builder.setMessage(getApplicationContext().getString(R.string.CallPermissionAlert))
                 .setCancelable(false)
-                .setPositiveButton(mContext.getString(android.R.string.yes), new DialogInterface.OnClickListener() {
+                .setPositiveButton(getApplicationContext().getString(android.R.string.qrCode), new DialogInterface.OnClickListener() {
                     public void onClick(final DialogInterface dialog, final int id) {
-                        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + getMobile));
-                        if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                            // TODO: Consider calling
-                            //    ActivityCompat#requestPermissions
-                            // here to request the missing permissions, and then overriding
-                            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                            //                                          int[] grantResults)
-                            // to handle the case where the user grants the permission. See the documentation
-                            // for ActivityCompat#requestPermissions for more details.
-                            return;
-                        }else{
-                            mContext.startActivity(intent);
-                        }
+
                     }
                 })
-                .setNegativeButton(mContext.getString(android.R.string.cancel), new DialogInterface.OnClickListener() {
+                .setNegativeButton(getApplicationContext().getString(android.R.string.nationalID), new DialogInterface.OnClickListener() {
                     public void onClick(final DialogInterface dialog, final int id) {
 //                        buildAlertMessageNoGpsWarning();
-                        dialog.dismiss();
 
                     }
                 });

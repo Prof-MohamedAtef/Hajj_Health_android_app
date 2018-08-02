@@ -35,8 +35,10 @@
     <string name="profiledescrip1">Browse patient medical reports</string>
     <string name="profiledescrip2">enable doctors diagnose the patient status according to previous reports</string>
     <string name="profile">Personal Report</string>
+    <string name="qrCode">QR Code</string>
     <string name="ask_doc">Ask Doctor</string>
-
+    <string name="nationalID">National ID</string>
+    <string name="CallPermissionAlert">Plz, may you give your app a permission in order to make a call ?</string>
     <string name="askdoc1">Request a Doctor</string>
     <string name="askdoc2">request doctors to visit you in your place</string>
     <string name="reachdoc1">Reach nearest Doctor</string>
