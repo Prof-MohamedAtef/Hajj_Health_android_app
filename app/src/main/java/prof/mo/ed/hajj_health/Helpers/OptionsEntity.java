@@ -19,6 +19,97 @@ public class OptionsEntity {
         this.Longitude=aLong;
     }
 
+    String FirstName, LastName, FamilyName, FullName, Email, PassportNum, NationalID, CountryName, CountryID;
+
+    public OptionsEntity(String countryID_str, String countryName_str, String s, String s1, String s2) {
+        this.CountryID=countryID_str;
+        this.CountryName=countryName_str;
+    }
+
+    public String getFirstName() {
+        return FirstName;
+    }
+
+    public void setFirstName(String firstName) {
+        FirstName = firstName;
+    }
+
+    public String getLastName() {
+        return LastName;
+    }
+
+    public void setLastName(String lastName) {
+        LastName = lastName;
+    }
+
+    public String getFamilyName() {
+        return FamilyName;
+    }
+
+    public void setFamilyName(String familyName) {
+        FamilyName = familyName;
+    }
+
+    public String getFullName() {
+        return FullName;
+    }
+
+    public void setFullName(String fullName) {
+        FullName = fullName;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
+
+    public String getPassportNum() {
+        return PassportNum;
+    }
+
+    public void setPassportNum(String passportNum) {
+        PassportNum = passportNum;
+    }
+
+    public String getNationalID() {
+        return NationalID;
+    }
+
+    public void setNationalID(String nationalID) {
+        NationalID = nationalID;
+    }
+
+    public String getCountryName() {
+        return CountryName;
+    }
+
+    public void setCountryName(String countryName) {
+        CountryName = countryName;
+    }
+
+    public String getCountryID() {
+        return CountryID;
+    }
+
+    public void setCountryID(String countryID) {
+        CountryID = countryID;
+    }
+
+    public OptionsEntity(String firstName_str, String lastName_str, String familyName_str, String fullName_str, String email_str, String passportNum_str, String nationalID_str, String countryName_str, String countryID_str) {
+        this.FirstName=firstName_str;
+        this.LastName=lastName_str;
+        this.FamilyName=familyName_str;
+        this.FullName=fullName_str;
+        this.Email=email_str;
+        this.PassportNum=passportNum_str;
+        this.NationalID=nationalID_str;
+        this.CountryName=countryName_str;
+        this.CountryID=countryID_str;
+    }
+
     public String getFormattedAddress() {
         return FormattedAddress;
     }

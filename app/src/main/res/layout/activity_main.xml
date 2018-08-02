@@ -21,7 +21,7 @@
             android:layout_height="0dp"
             android:layout_weight="1">
             <LinearLayout
-                android:layout_margin="15dp"
+                android:layout_margin="10dp"
                 android:background="@color/green"
                 android:gravity="center"
                 android:id="@+id/Linear_Profile_launcher"
@@ -40,7 +40,7 @@
 
                 <TextView
                     android:layout_margin="10dp"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"
                     android:textColor="@color/icons"
                     android:layout_marginTop="5dp"
@@ -49,6 +49,7 @@
                     android:layout_height="wrap_content" />
             </LinearLayout>
             <LinearLayout
+                android:layout_margin="10dp"
                 android:gravity="center"
                 android:id="@+id/Linear_doc_request_launcher"
                 android:layout_width="0dp"
@@ -67,7 +68,7 @@
 
                 <TextView
                     android:layout_margin="10dp"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"
                     android:textColor="@color/icons"
                     android:layout_marginTop="5dp"
@@ -77,10 +78,12 @@
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
+            android:background="@color/icons"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
             <LinearLayout
+                android:layout_margin="10dp"
                 android:background="@color/green"
                 android:gravity="center"
                 android:layout_width="0dp"
@@ -96,7 +99,7 @@
                     android:scaleType="centerCrop"/>
                 <TextView
                     android:layout_margin="10dp"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"
                     android:textColor="@color/icons"
                     android:layout_marginTop="5dp"
@@ -106,6 +109,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:layout_margin="10dp"
                 android:background="@color/green"
                 android:gravity="center"
                 android:layout_width="0dp"
@@ -121,7 +125,7 @@
                     android:scaleType="centerCrop"/>
                 <TextView
                     android:layout_margin="10dp"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"
                     android:textColor="@color/icons"
                     android:layout_marginTop="5dp"

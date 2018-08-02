@@ -34,7 +34,7 @@
     <string name="qr_descrip2">scan your data via QR Code scanner technique</string>
     <string name="profiledescrip1">Browse patient medical reports</string>
     <string name="profiledescrip2">enable doctors diagnose the patient status according to previous reports</string>
-    <string name="profile">Personal Profile</string>
+    <string name="profile">Personal Report</string>
     <string name="ask_doc">Ask Doctor</string>
 
     <string name="askdoc1">Request a Doctor</string>

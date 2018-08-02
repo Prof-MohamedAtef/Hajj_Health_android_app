@@ -1,7 +1,13 @@
 package prof.mo.ed.hajj_health.Activities;
 
+import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NotificationCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,6 +38,38 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private void ChooseOption() {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
+        builder.setMessage(getApplicationContext().getString(android.R.string.CallPermissionAlert))
+                .setCancelable(false)
+                .setPositiveButton(mContext.getString(android.R.string.yes), new DialogInterface.OnClickListener() {
+                    public void onClick(final DialogInterface dialog, final int id) {
+                        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + getMobile));
+                        if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                            // TODO: Consider calling
+                            //    ActivityCompat#requestPermissions
+                            // here to request the missing permissions, and then overriding
+                            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                            //                                          int[] grantResults)
+                            // to handle the case where the user grants the permission. See the documentation
+                            // for ActivityCompat#requestPermissions for more details.
+                            return;
+                        }else{
+                            mContext.startActivity(intent);
+                        }
+                    }
+                })
+                .setNegativeButton(mContext.getString(android.R.string.cancel), new DialogInterface.OnClickListener() {
+                    public void onClick(final DialogInterface dialog, final int id) {
+//                        buildAlertMessageNoGpsWarning();
+                        dialog.dismiss();
+
+                    }
+                });
+        final AlertDialog alert = builder.create();
+        alert.show();
     }
 
     @Override
