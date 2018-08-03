@@ -9,20 +9,23 @@
     tools:context="prof.mo.ed.hajj_health.Activities.MainActivity">
 
 
+
     <LinearLayout
         android:background="@color/blue"
         android:layout_width="match_parent"
-        android:layout_margin="25dp"
+        android:layout_margin="15dp"
         android:layout_height="match_parent"
         android:orientation="vertical">
         <LinearLayout
+            android:gravity="center_horizontal|center_vertical"
             android:background="@color/icons"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
             <LinearLayout
+
                 android:layout_margin="10dp"
-                android:background="@color/green"
+                android:background="@drawable/radius_layout"
                 android:gravity="center"
                 android:id="@+id/Linear_Profile_launcher"
                 android:layout_width="0dp"
@@ -56,7 +59,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:background="@color/green">
+                android:background="@drawable/radius_layout">
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_marginTop="4dp"
                     android:id="@+id/request_doc"
@@ -81,10 +84,12 @@
             android:background="@color/icons"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:gravity="center_horizontal|center_vertical"
             android:layout_weight="1">
             <LinearLayout
+                android:id="@+id/Linear_consultation_Launcher"
                 android:layout_margin="10dp"
-                android:background="@color/green"
+                android:background="@drawable/radius_layout"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -99,18 +104,19 @@
                     android:scaleType="centerCrop"/>
                 <TextView
                     android:layout_margin="10dp"
-                    android:textSize="15sp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
                     android:textColor="@color/icons"
                     android:layout_marginTop="5dp"
-                    android:text="Request Doctor"
+                    android:text="Request consultation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/Linear_Ambulance_launcher"
                 android:layout_margin="10dp"
-                android:background="@color/green"
+                android:background="@drawable/radius_layout"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -129,11 +135,10 @@
                     android:textStyle="bold"
                     android:textColor="@color/icons"
                     android:layout_marginTop="5dp"
-                    android:text="Request Doctor"
+                    android:text="Ambulance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
-
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

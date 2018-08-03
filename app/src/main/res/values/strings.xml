@@ -36,7 +36,9 @@
     <string name="profiledescrip2">enable doctors diagnose the patient status according to previous reports</string>
     <string name="profile">Personal Report</string>
     <string name="qrCode">QR Code</string>
+    <string name="search">Search</string>
     <string name="ask_doc">Ask Doctor</string>
+    <string name="Choose_option">Choose Option to retrieve Your Profile</string>
     <string name="nationalID">National ID</string>
     <string name="CallPermissionAlert">Plz, may you give your app a permission in order to make a call ?</string>
     <string name="askdoc1">Request a Doctor</string>
@@ -47,6 +49,22 @@
     <string name="notify2">receive notifications from doctors and brows details of places arrival</string>
     <string name="weight">Weight</string>
     <string name="DOB">Date of Birth</string>
+    <string name="Sex">Sex</string>
+    <string name="country">Country Name</string>
+    <string name="nID">National ID</string>
+    <string name="tat3eem">Vaccinations</string>
+    <string name="makeOnlinerequest">Request Doctor</string>
+    <string name="requestAmbulance">Request Ambulance</string>
+    <string name="approve_offline">Connection Lost</string>
+    <string name="Done">Done</string>
+    <string name="q1">Hi, i am tired, i think i has a flu.</string>
+    <string name="q2">Welcome! Take a phlomox from the pharmacy.</string>
+    <string name="q3">Thanks Sir!.</string>
+    <string name="doc_name">Dr. Ahmed Abd-El-Aaty</string>
+    <string name="doc_spec">specialist at : nose, ear, and throat.</string>
+    <string name="approve_offlineSent">However, your request has been stored until connection is returned back!</string>
+    <string name="request_txt">You are going to send a request to the nearest doctor in your zone, Do you want to Submit the request?</string>
+    <string name="requestambulance_txt">You are going to send the nearest Ambulance request in your zone, Are you sure to Submit this request?</string>
 
 
 </resources>

@@ -1,10 +1,12 @@
 package prof.mo.ed.hajj_health.Helpers;
 
+import java.io.Serializable;
+
 /**
  * Created by Prof-Mohamed Atef on 8/1/2018.
  */
 
-public class OptionsEntity {
+public class OptionsEntity implements Serializable {
 
     String FormattedAddress;
 
@@ -19,11 +21,164 @@ public class OptionsEntity {
         this.Longitude=aLong;
     }
 
-    String FirstName, LastName, FamilyName, FullName, Email, PassportNum, NationalID, CountryName, CountryID;
+    String FirstName, LastName, FamilyName, FullName, Email, NationalID, CountryName, CountryID;
 
     public OptionsEntity(String countryID_str, String countryName_str, String s, String s1, String s2) {
         this.CountryID=countryID_str;
         this.CountryName=countryName_str;
+    }
+
+    public String getProfileID() {
+        return ProfileID;
+    }
+
+    public void setProfileID(String profileID) {
+        ProfileID = profileID;
+    }
+
+    String ProfileID, PatientName, Nationality, Sex, DOB, Job, VisaType, PassportNum, Diabetes, Heart, Length, Weight,
+            HealthStatus, Blood, haveTat3eem, DoctorName, DiagnoseDate;
+    public OptionsEntity(String id_s, String name_s, String nationality_s, String sex_s, String dob_s, String job_s,
+                         String visa_type_s,String passport_num_s, String diabetes_s, String heart_s, String length_s,
+                         String weight_s, String healthStatus_s, String blood_s, String haveTat3em_s, String doctor_s,
+                         String diagnose_date_s) {
+        this.ProfileID=id_s;
+        this.PatientName=name_s;
+        this.Nationality=nationality_s;
+        this.Sex=sex_s;
+        this.DOB=dob_s;
+        this.Job=job_s;
+        this.VisaType=visa_type_s;
+        this.PassportNum=passport_num_s;
+        this.Diabetes=diabetes_s;
+        this.Heart=heart_s;
+        this.Length=length_s;
+        this.Weight=weight_s;
+        this.HealthStatus=healthStatus_s;
+        this.Blood=blood_s;
+        this.haveTat3eem=haveTat3em_s;
+        this.DoctorName=doctor_s;
+        this.DiagnoseDate=diagnose_date_s;
+    }
+
+    public String getPatientName() {
+        return PatientName;
+    }
+
+    public void setPatientName(String patientName) {
+        PatientName = patientName;
+    }
+
+    public String getNationality() {
+        return Nationality;
+    }
+
+    public void setNationality(String nationality) {
+        Nationality = nationality;
+    }
+
+    public String getSex() {
+        return Sex;
+    }
+
+    public void setSex(String sex) {
+        Sex = sex;
+    }
+
+    public String getDOB() {
+        return DOB;
+    }
+
+    public void setDOB(String DOB) {
+        this.DOB = DOB;
+    }
+
+    public String getJob() {
+        return Job;
+    }
+
+    public void setJob(String job) {
+        Job = job;
+    }
+
+    public String getVisaType() {
+        return VisaType;
+    }
+
+    public void setVisaType(String visaType) {
+        VisaType = visaType;
+    }
+
+    public String getDiabetes() {
+        return Diabetes;
+    }
+
+    public void setDiabetes(String diabetes) {
+        Diabetes = diabetes;
+    }
+
+    public String getHeart() {
+        return Heart;
+    }
+
+    public void setHeart(String heart) {
+        Heart = heart;
+    }
+
+    public String getLength() {
+        return Length;
+    }
+
+    public void setLength(String length) {
+        Length = length;
+    }
+
+    public String getWeight() {
+        return Weight;
+    }
+
+    public void setWeight(String weight) {
+        Weight = weight;
+    }
+
+    public String getHealthStatus() {
+        return HealthStatus;
+    }
+
+    public void setHealthStatus(String healthStatus) {
+        HealthStatus = healthStatus;
+    }
+
+    public String getBlood() {
+        return Blood;
+    }
+
+    public void setBlood(String blood) {
+        Blood = blood;
+    }
+
+    public String getHaveTat3eem() {
+        return haveTat3eem;
+    }
+
+    public void setHaveTat3eem(String haveTat3eem) {
+        this.haveTat3eem = haveTat3eem;
+    }
+
+    public String getDoctorName() {
+        return DoctorName;
+    }
+
+    public void setDoctorName(String doctorName) {
+        DoctorName = doctorName;
+    }
+
+    public String getDiagnoseDate() {
+        return DiagnoseDate;
+    }
+
+    public void setDiagnoseDate(String diagnoseDate) {
+        DiagnoseDate = diagnoseDate;
     }
 
     public String getFirstName() {

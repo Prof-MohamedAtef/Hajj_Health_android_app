@@ -19,7 +19,7 @@
             android:gravity="center"
             android:orientation="horizontal">
             <TextView
-                android:textColor="@color/accent"
+                android:textColor="@color/green"
                 android:gravity="center_horizontal|center_vertical"
                 android:text="@string/urin"
                 android:id="@+id/urin_txt"
@@ -128,9 +128,8 @@
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/makeRequest"
                 android:layout_width="match_parent"
-                app:backgroundTint="@color/accent"
-                android:layout_height="match_parent"
-                android:src="@drawable/water7" />
+                app:backgroundTint="@color/green"
+                android:layout_height="match_parent" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

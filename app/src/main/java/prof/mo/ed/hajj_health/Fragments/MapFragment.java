@@ -185,9 +185,9 @@ public class MapFragment extends android.support.v4.app.Fragment implements Conn
                     e.printStackTrace();
                 }
                 if (isInternetConnected == true) {
-//                    DialougRUSureMakeRequest();
+                    DialougRUSureMakeRequest();
                 } else if (isInternetConnected == false) {
-//                    DialougMakeRequestConnectionLost();
+                    DialougMakeRequestConnectionLost();
                 }
 
             }
@@ -205,6 +205,41 @@ public class MapFragment extends android.support.v4.app.Fragment implements Conn
         if (!manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             buildAlertMessageNoGps();
         }
+    }
+
+    private void DialougMakeRequestConnectionLost() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle(getString(R.string.approve_offline));
+        builder.setMessage(getString(R.string.approve_offlineSent));
+        builder.setPositiveButton(getString(R.string.Done), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+        AlertDialog Dialogue = builder.create();
+        Dialogue.show();
+    }
+
+    AlertDialog Dialogue;
+    private void DialougRUSureMakeRequest() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle(getString(R.string.makeOnlinerequest));
+        builder.setMessage(getString(R.string.request_txt));
+        builder.setPositiveButton(getString(R.string.Yes), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Dialogue.dismiss();
+                Toast.makeText(getActivity(), "Your request has been submitted successfully!", Toast.LENGTH_LONG).show();
+            }
+        });
+        builder.setNegativeButton(getString(R.string.No), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Dialogue.dismiss();
+            }
+        });
+        Dialogue = builder.create();
+        Dialogue.show();
     }
 
     private void buildAlertMessageNoGps() {
@@ -349,7 +384,9 @@ public class MapFragment extends android.support.v4.app.Fragment implements Conn
     @Override
     public void onResume() {
         super.onResume();
-        mGoogleApiClient.connect();
+        if (isInternetConnected){
+            mGoogleApiClient.connect();
+        }
     }
 
     @Override
